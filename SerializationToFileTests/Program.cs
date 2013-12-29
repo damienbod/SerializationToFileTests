@@ -9,7 +9,9 @@ namespace SerializationToFiles
             while (true)
             {
                 FileAccess.WriteReadProtobufFile("./fileProtobuf.txt");
-                FileAccess.WriteReadNewtonsoftFile("./jsonNewtonsoft.txt");
+                FileAccess.WriteReadNewtonsoftFileJson("./jsonNewtonsoft.txt");
+                // DOES NOT WORK
+                FileAccess.WriteReadNewtonsoftFileBson("./bsonNewtonsoft.txt");
                 Console.ReadKey();
             }
             
