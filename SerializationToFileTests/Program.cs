@@ -56,6 +56,12 @@ namespace SerializationToFiles
         }
         private static void WriteCsv(string path, StringBuilder results)
         {
+            DirectoryInfo dir = new DirectoryInfo("Results");
+            if (!dir.Exists)
+            {
+                dir.Create();
+            }  
+
             File.WriteAllText(path, results.ToString());
         }
     }
