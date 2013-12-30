@@ -54,7 +54,12 @@
     <Compile Include="Dtos\SimpleTransferProtobuf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FileAccess.cs" />
+    <Compile Include="Serializers\FileAccess.cs" />
+    <Compile Include="Serializers\FileAccessDotNetXml.cs" />
+    <Compile Include="Serializers\FileAccessNewtonsoftBson.cs" />
+    <Compile Include="Serializers\FileAccessNewtonsoftJson.cs" />
+    <Compile Include="Serializers\FileAccessProtobuf.cs" />
+    <Compile Include="Serializers\FileAccessServiceStackJson.cs" />
     <Compile Include="TestObjects.cs" />
   </ItemGroup>
   <ItemGroup>
